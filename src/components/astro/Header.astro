@@ -1,0 +1,37 @@
+---
+const navItems = [
+  { label: "Inicio", href: "#hero" },
+  { label: "Historia", href: "#historia" },
+  { label: "Especialidades", href: "#especialidades" },
+  { label: "Espacio", href: "#espacio" },
+  { label: "Menú", href: "#menu" },
+  { label: "Eventos", href: "#eventos" },
+  { label: "Ubicación", href: "#ubicacion" },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-crema/90 backdrop-blur-sm border-b border-verde-oscuro/10">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <a href="#hero" class="font-titulo text-xl text-verde-oscuro no-underline">Kaidō</a>
+    <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
+      {
+        navItems.slice(1).map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="text-small text-texto-muted no-underline transition-colors duration-300 hover:text-verde-oscuro"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <!-- Mobile menu toggle placeholder -->
+    <button class="md:hidden flex flex-col gap-1.5 bg-transparent border-none cursor-pointer p-1" aria-label="Menú">
+      <span class="block h-px w-5 bg-texto transition-transform duration-300"></span>
+      <span class="block h-px w-5 bg-texto transition-opacity duration-300"></span>
+      <span class="block h-px w-5 bg-texto transition-transform duration-300"></span>
+    </button>
+  </nav>
+</header>

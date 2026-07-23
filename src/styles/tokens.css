@@ -1,5 +1,67 @@
 @theme {
+  /* ──────────────────────── COLORES ──────────────────────── */
   --color-verde-oscuro: #1F5C52;
   --color-bordo: #6A1D2A;
   --color-crema: #F6F2EC;
+  --color-texto: #2E2A27;
+  --color-texto-muted: #605B55;
+  --color-blanco: #FFFFFF;
+  --color-dorado: #B8935F;
+  --color-fondo-oscuro: #1F2421;
+
+  /* ──────────────────────── TIPOGRAFÍA ──────────────────────── */
+  --font-titulo: "Cormorant Garamond", serif;
+  --font-contenido: "Inter", sans-serif;
+
+  /* ──────────────────── TAMAÑOS DESKTOP ──────────────────── */
+  --text-display: 5rem;
+  --text-display--line-height: 1.05;
+  --text-display--font-weight: 600;
+  --text-display--letter-spacing: -0.02em;
+
+  --text-h1: 3.5rem;
+  --text-h1--line-height: 1.1;
+  --text-h1--font-weight: 600;
+
+  --text-h2: 2.5rem;
+  --text-h2--line-height: 1.15;
+  --text-h2--font-weight: 600;
+
+  --text-h3: 1.75rem;
+  --text-h3--line-height: 1.2;
+  --text-h3--font-weight: 500;
+
+  --text-h4: 1.25rem;
+  --text-h4--line-height: 1.3;
+  --text-h4--font-weight: 500;
+
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.6;
+  --text-body--font-weight: 400;
+
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-small--font-weight: 400;
+
+  /* ──────────────────────── ESPACIADO ──────────────────────── */
+  --spacing: 0.25rem;
+
+  --spacing-section: 6rem;
+  --spacing-section-inner: 4rem;
+  --spacing-contenido: 2rem;
+  --spacing-elemento: 1rem;
+  --spacing-detalle: 0.5rem;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 767px) {
+  :root {
+    --text-display: 3rem;
+    --text-h1: 2rem;
+    --text-h2: 1.5rem;
+    --text-h3: 1.25rem;
+    --text-h4: 1.125rem;
+    --text-body: 1rem;
+    --text-small: 0.8125rem;
+  }
 }
