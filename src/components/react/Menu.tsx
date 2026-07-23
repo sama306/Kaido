@@ -22,7 +22,7 @@ export default function Menu() {
           Menú
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-contenido">
+        <div className="flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-2 mb-contenido">
           {categorias.map((cat) => {
             const activa = categoria === cat.id;
             return (
@@ -30,15 +30,16 @@ export default function Menu() {
                 key={cat.id}
                 onClick={() => setCategoria(cat.id)}
                 className={`
-                  px-6 md:px-8 py-2.5 md:py-3 text-body font-contenido font-medium
+                  pb-2.5 text-body font-contenido font-medium tracking-wide
                   transition-colors duration-300 ease-out cursor-pointer
+                  border-b-2
                   ${activa
-                    ? "bg-verde-oscuro text-crema"
-                    : "bg-transparent text-texto border-2 border-verde-oscuro/30 hover:border-verde-oscuro/60"
+                    ? "text-verde-oscuro border-dorado"
+                    : "text-texto-muted border-transparent hover:text-texto"
                   }
                 `}
               >
-                <span className="mr-2">{cat.emoji}</span>
+                <span className="mr-1.5">{cat.emoji}</span>
                 {cat.label}
               </button>
             );

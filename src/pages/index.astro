@@ -5,6 +5,8 @@ import Historia from "../components/react/Historia.tsx";
 import Especialidades from "../components/react/Especialidades.tsx";
 import Espacio from "../components/react/Espacio.tsx";
 import Menu from "../components/react/Menu.tsx";
+import Instagram from "../components/react/Instagram.tsx";
+import Eventos from "../components/react/Eventos.tsx";
 ---
 
 <Layout>
@@ -19,12 +21,9 @@ import Menu from "../components/react/Menu.tsx";
 
     <Menu client:visible />
 
-    <!-- Eventos -->
-    <section id="eventos" class="min-h-screen flex items-center justify-center bg-crema px-6">
-      <div class="max-w-2xl text-center">
-        <h2 class="text-h2 text-verde-oscuro">Eventos</h2>
-      </div>
-    </section>
+    <Instagram client:visible />
+
+    <Eventos client:visible />
 
     <!-- Ubicación -->
     <section id="ubicacion" class="min-h-screen flex items-center justify-center bg-crema px-6">
