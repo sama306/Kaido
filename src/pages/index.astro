@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/react/Hero.tsx";
 import Historia from "../components/react/Historia.tsx";
+import Especialidades from "../components/react/Especialidades.tsx";
+import Espacio from "../components/react/Espacio.tsx";
+import Menu from "../components/react/Menu.tsx";
 ---
 
 <Layout>
@@ -10,26 +13,11 @@ import Historia from "../components/react/Historia.tsx";
 
     <Historia client:load />
 
-    <!-- Especialidades -->
-    <section id="especialidades" class="min-h-screen flex items-center justify-center bg-crema px-6">
-      <div class="max-w-2xl text-center">
-        <h2 class="text-h2 text-verde-oscuro">Especialidades</h2>
-      </div>
-    </section>
+    <Especialidades client:load />
 
-    <!-- Espacio -->
-    <section id="espacio" class="min-h-screen flex items-center justify-center bg-crema px-6">
-      <div class="max-w-2xl text-center">
-        <h2 class="text-h2 text-verde-oscuro">Nuestro Espacio</h2>
-      </div>
-    </section>
+    <Espacio client:load />
 
-    <!-- Menú -->
-    <section id="menu" class="min-h-screen flex items-center justify-center bg-crema px-6">
-      <div class="max-w-2xl text-center">
-        <h2 class="text-h2 text-verde-oscuro">Menú</h2>
-      </div>
-    </section>
+    <Menu client:visible />
 
     <!-- Eventos -->
     <section id="eventos" class="min-h-screen flex items-center justify-center bg-crema px-6">
