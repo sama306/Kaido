@@ -7,6 +7,7 @@ import Espacio from "../components/react/Espacio.tsx";
 import Menu from "../components/react/Menu.tsx";
 import Instagram from "../components/react/Instagram.tsx";
 import Eventos from "../components/react/Eventos.tsx";
+import Ubicacion from "../components/astro/Ubicacion.astro";
 ---
 
 <Layout>
@@ -25,11 +26,6 @@ import Eventos from "../components/react/Eventos.tsx";
 
     <Eventos client:visible />
 
-    <!-- Ubicación -->
-    <section id="ubicacion" class="min-h-screen flex items-center justify-center bg-crema px-6">
-      <div class="max-w-2xl text-center">
-        <h2 class="text-h2 text-verde-oscuro">Ubicación</h2>
-      </div>
-    </section>
+    <Ubicacion />
   </main>
 </Layout>

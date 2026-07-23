@@ -1,0 +1,83 @@
+---
+import { ubicacion } from "../../data/ubicacion";
+---
+
+<section id="ubicacion" class="py-section px-6 bg-crema">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-h2 text-verde-oscuro text-center mb-section-inner">
+      Ubicación
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-start">
+      <div class="flex flex-col gap-8">
+        <div class="w-full max-w-[180px] mx-auto md:mx-0">
+          <svg
+            viewBox="0 0 100 100"
+            fill="none"
+            class="w-full h-auto"
+            aria-hidden="true"
+          >
+            <rect x="15" y="22" width="70" height="63" stroke="#1F5C52" stroke-width="1.2" />
+            <path d="M8 25 L50 14 L92 25" stroke="#6A1D2A" stroke-width="1" stroke-linecap="round" />
+            <rect x="40" y="48" width="20" height="37" stroke="#6A1D2A" stroke-width="1" />
+            <circle cx="56" cy="68" r="1.5" fill="#B8935F" />
+            <rect x="20" y="30" width="14" height="16" stroke="#B8935F" stroke-width="0.8" />
+            <line x1="27" y1="30" x2="27" y2="46" stroke="#B8935F" stroke-width="0.4" />
+            <line x1="20" y1="38" x2="34" y2="38" stroke="#B8935F" stroke-width="0.4" />
+            <rect x="66" y="30" width="14" height="16" stroke="#B8935F" stroke-width="0.8" />
+            <line x1="73" y1="30" x2="73" y2="46" stroke="#B8935F" stroke-width="0.4" />
+            <line x1="66" y1="38" x2="80" y2="38" stroke="#B8935F" stroke-width="0.4" />
+            <rect x="41" y="49" width="18" height="35" fill="#B8935F" opacity="0.06" />
+            <circle cx="50" cy="20" r="2.5" stroke="#B8935F" stroke-width="0.6" fill="none" />
+            <line x1="50" y1="17.5" x2="50" y2="13" stroke="#B8935F" stroke-width="0.6" />
+          </svg>
+        </div>
+
+        <div>
+          <h3 class="text-h4 text-verde-oscuro font-titulo mb-2">Dirección</h3>
+          <p class="text-body text-texto font-contenido leading-relaxed">
+            {ubicacion.direccionCompleta}
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-h4 text-verde-oscuro font-titulo mb-2">Horarios</h3>
+          <div class="space-y-1.5">
+            {ubicacion.horarios.map((h) => (
+              <div class="flex justify-between gap-4 text-body font-contenido max-w-[280px]">
+                <span class="text-texto">{h.dias}</span>
+                <span class="text-texto-muted tabular-nums">{h.horas}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <a
+          href={ubicacion.googleMapsNavUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-verde-oscuro text-crema text-body font-contenido font-medium no-underline transition-all duration-300 hover:bg-verde-oscuro/85 hover:scale-[1.02] w-fit"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+          Cómo llegar
+        </a>
+      </div>
+
+      <div class="w-full">
+        <div class="aspect-[4/3] w-full">
+          <iframe
+            src={ubicacion.googleMapsEmbedUrl}
+            class="w-full h-full"
+            style="border: 0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de ubicación de Kaidō"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

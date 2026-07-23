@@ -1,13 +1,91 @@
 ---
-
+import { ubicacion } from "../../data/ubicacion";
 ---
 
 <footer class="bg-fondo-oscuro text-crema">
-  <div class="mx-auto max-w-7xl px-6 py-12">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-      <p class="font-titulo text-h4 text-crema m-0">Kaidō</p>
-      <p class="text-small text-crema/60 m-0">
+  <div class="mx-auto max-w-7xl px-6 py-12 md:py-16">
+    <div class="grid md:grid-cols-4 gap-10 md:gap-8">
+      <div class="flex flex-col gap-4 md:col-span-1">
+        <div class="flex items-center gap-3">
+          <svg
+            viewBox="0 0 32 32"
+            fill="none"
+            class="w-8 h-8 shrink-0"
+            aria-hidden="true"
+          >
+            <circle cx="16" cy="16" r="14" stroke="#B8935F" stroke-width="1.2" />
+            <path d="M16 4 C24 4 28 10 28 16 C28 22 24 28 16 28" stroke="#6A1D2A" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M8 12 C8 20 12 26 16 28" stroke="#1F5C52" stroke-width="1.2" stroke-linecap="round" opacity="0.6" />
+          </svg>
+          <span class="font-titulo text-h4 text-crema">Kaidō</span>
+        </div>
+        <p class="text-small text-crema/60 font-contenido leading-relaxed max-w-[220px]">
+          Café de especialidad en Palermo Soho. Un lugar para bajar el ritmo.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-small font-contenido font-semibold text-crema/80 uppercase tracking-wider mb-4">
+          Horarios
+        </h4>
+        <div class="space-y-2">
+          {ubicacion.horarios.map((h) => (
+            <div class="flex flex-col gap-0.5">
+              <span class="text-small text-crema/70 font-contenido">{h.dias}</span>
+              <span class="text-small text-crema font-contenido tabular-nums">{h.horas}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-small font-contenido font-semibold text-crema/80 uppercase tracking-wider mb-4">
+          Contacto
+        </h4>
+        <div class="space-y-3">
+          <p class="text-small text-crema font-contenido leading-relaxed">
+            {ubicacion.direccionCompleta}
+          </p>
+          <a
+            href={`tel:${ubicacion.telefono}`}
+            class="block text-small text-crema/70 hover:text-crema font-contenido no-underline transition-colors duration-300"
+          >
+            {ubicacion.telefono}
+          </a>
+          <a
+            href={`mailto:${ubicacion.email}`}
+            class="block text-small text-crema/70 hover:text-crema font-contenido no-underline transition-colors duration-300"
+          >
+            {ubicacion.email}
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-small font-contenido font-semibold text-crema/80 uppercase tracking-wider mb-4">
+          Redes
+        </h4>
+        <div class="space-y-3">
+          {ubicacion.redesSociales.map((r) => (
+            <a
+              href={r.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 text-small text-crema/70 hover:text-crema font-contenido no-underline transition-colors duration-300 w-fit"
+            >
+              {r.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-crema/10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-small text-crema/40 font-contenido m-0">
         © {new Date().getFullYear()} Kaidō. Todos los derechos reservados.
+      </p>
+      <p class="text-small text-crema/30 font-contenido m-0">
+        Diseño y desarrollo independiente — este no es un sitio oficial de Kaidō.
       </p>
     </div>
   </div>
