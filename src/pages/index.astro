@@ -1,16 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/react/Hero.tsx";
 ---
 
 <Layout>
   <main>
-    <!-- Hero -->
-    <section id="hero" class="min-h-screen flex items-center justify-center bg-crema pt-20">
-      <div class="text-center px-6">
-        <h1 class="text-display text-verde-oscuro">Kaidō</h1>
-        <p class="text-body text-texto-muted mt-4 max-w-lg mx-auto">Café de especialidad en el corazón de Palermo</p>
-      </div>
-    </section>
+    <Hero client:load />
 
     <!-- Historia -->
     <section id="historia" class="min-h-screen flex items-center justify-center bg-crema px-6">
