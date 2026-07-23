@@ -1,18 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/react/Hero.tsx";
+import Historia from "../components/react/Historia.tsx";
 ---
 
 <Layout>
   <main>
     <Hero client:load />
 
-    <!-- Historia -->
-    <section id="historia" class="min-h-screen flex items-center justify-center bg-crema px-6">
-      <div class="max-w-2xl text-center">
-        <h2 class="text-h2 text-verde-oscuro">Nuestra Historia</h2>
-      </div>
-    </section>
+    <Historia client:load />
 
     <!-- Especialidades -->
     <section id="especialidades" class="min-h-screen flex items-center justify-center bg-crema px-6">
