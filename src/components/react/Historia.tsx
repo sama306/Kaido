@@ -70,6 +70,10 @@ export default function Historia() {
       {/* Texto que aparece progresivamente con el scroll */}
       <div className="flex-1 flex items-center px-8 lg:px-16 xl:px-20 py-12 lg:py-0">
         <div className="max-w-xl">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="w-8 h-px bg-bordo/40" />
+            <span className="text-small font-contenido font-medium uppercase tracking-[0.15em] text-dorado">EL LUGAR</span>
+          </div>
           {LINES.map((line, i) => (
             <p
               key={i}

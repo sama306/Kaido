@@ -22,9 +22,14 @@ export default function Espacio() {
 
   return (
     <>
-      <section id="espacio" className="py-section px-6 bg-crema">
+      <section id="espacio" className="pt-section px-6 bg-crema">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-h2 text-verde-oscuro text-center mb-section-inner">
+        <div className="flex items-center gap-3 justify-center mb-3">
+          <span className="w-8 h-px bg-bordo/40" />
+          <span className="text-small font-contenido font-medium uppercase tracking-[0.15em] text-dorado">GALERÍA</span>
+          <span className="w-8 h-px bg-bordo/40" />
+        </div>
+        <h2 className="text-h2 text-verde-oscuro text-center mb-section-inner">
             Nuestro Espacio
           </h2>
 
