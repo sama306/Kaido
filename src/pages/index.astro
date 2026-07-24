@@ -18,14 +18,63 @@ import Ubicacion from "../components/astro/Ubicacion.astro";
 
     <Especialidades client:load />
 
-    <Espacio client:load />
+    <div class="relative">
+      <div class="hidden lg:block absolute left-0 top-0 h-full w-36 z-10 pointer-events-none overflow-hidden" aria-hidden="true">
+        <svg viewBox="0 0 100 4000" class="w-full h-full" fill="none">
+          <path d="M 15,0 Q 5,290 15,570 Q 25,860 15,1140 Q 5,1430 15,1720 Q 25,2000 15,2290 Q 5,2570 15,2860 Q 25,3140 15,3430 Q 5,3710 15,4000" stroke="#1F5C52" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+          <path d="M 24,0 Q 14,290 24,570 Q 34,860 24,1140 Q 14,1430 24,1720 Q 34,2000 24,2290 Q 14,2570 24,2860 Q 34,3140 24,3430 Q 14,3710 24,4000" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.18"/>
+          <line x1="2" y1="285" x2="28" y2="285" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round" opacity="0.08"/>
+          <line x1="2" y1="855" x2="28" y2="855" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round" opacity="0.08"/>
+          <line x1="2" y1="1425" x2="28" y2="1425" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round" opacity="0.08"/>
+          <line x1="2" y1="1995" x2="28" y2="1995" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round" opacity="0.08"/>
+          <line x1="2" y1="2565" x2="28" y2="2565" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round" opacity="0.08"/>
+          <line x1="2" y1="3135" x2="28" y2="3135" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round" opacity="0.08"/>
+          <line x1="2" y1="3705" x2="28" y2="3705" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round" opacity="0.08"/>
+          <circle cx="15" cy="570" r="5" stroke="#B8935F" stroke-width="1" fill="none" opacity="0.35"/>
+          <circle cx="15" cy="1720" r="5" stroke="#B8935F" stroke-width="1" fill="none" opacity="0.35"/>
+          <circle cx="15" cy="2860" r="5" stroke="#B8935F" stroke-width="1" fill="none" opacity="0.35"/>
+          <path d="M 2,3700 Q 15,3660 28,3700 T 50,3700" stroke="#1F5C52" stroke-width="0.7" stroke-linecap="round" opacity="0.1"/>
+        </svg>
+      </div>
+      <div class="hidden lg:block absolute right-0 top-0 h-full w-36 z-10 pointer-events-none overflow-hidden" aria-hidden="true">
+        <svg viewBox="0 0 100 4000" class="w-full h-full" fill="none">
+          <path d="M 85,0 Q 75,290 85,570 Q 95,860 85,1140 Q 75,1430 85,1720 Q 95,2000 85,2290 Q 75,2570 85,2860 Q 95,3140 85,3430 Q 75,3710 85,4000" stroke="#1F5C52" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+          <path d="M 85,200 Q 68,190 58,204" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 85,570 Q 102,560 110,574" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 85,860 Q 68,850 58,864" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 85,1430 Q 102,1420 110,1434" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 85,2000 Q 68,1990 58,2004" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 85,2570 Q 102,2560 110,2574" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 85,3140 Q 68,3130 58,3144" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 85,3430 Q 102,3420 110,3434" stroke="#6A1D2A" stroke-width="0.9" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 58,204 Q 50,196 44,204 Q 50,212 58,204" stroke="#1F5C52" stroke-width="1.4" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 110,574 Q 118,566 122,574 Q 118,582 110,574" stroke="#6A1D2A" stroke-width="1.4" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 58,864 Q 50,856 44,864 Q 50,872 58,864" stroke="#1F5C52" stroke-width="1.4" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 110,1434 Q 118,1426 122,1434 Q 118,1442 110,1434" stroke="#6A1D2A" stroke-width="1.4" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 58,2004 Q 50,1996 44,2004 Q 50,2012 58,2004" stroke="#1F5C52" stroke-width="1.4" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 110,2574 Q 118,2566 122,2574 Q 118,2582 110,2574" stroke="#6A1D2A" stroke-width="1.4" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 58,3144 Q 50,3136 44,3144 Q 50,3152 58,3144" stroke="#1F5C52" stroke-width="1.4" stroke-linecap="round" opacity="0.2"/>
+          <path d="M 110,3434 Q 118,3426 122,3434 Q 118,3442 110,3434" stroke="#6A1D2A" stroke-width="1.4" stroke-linecap="round" opacity="0.2"/>
+          <circle cx="42" cy="204" r="3.5" fill="#B8935F" opacity="0.3"/>
+          <circle cx="42" cy="864" r="3.5" fill="#B8935F" opacity="0.3"/>
+          <circle cx="42" cy="2004" r="3.5" fill="#B8935F" opacity="0.3"/>
+          <circle cx="42" cy="3144" r="3.5" fill="#B8935F" opacity="0.3"/>
+          <circle cx="124" cy="574" r="3.5" fill="#B8935F" opacity="0.3"/>
+          <circle cx="124" cy="1434" r="3.5" fill="#B8935F" opacity="0.3"/>
+          <circle cx="124" cy="2574" r="3.5" fill="#B8935F" opacity="0.3"/>
+          <circle cx="124" cy="3434" r="3.5" fill="#B8935F" opacity="0.3"/>
+        </svg>
+      </div>
 
-    <Menu client:visible />
+      <Espacio client:load />
 
-    <Instagram client:visible />
+      <Menu client:visible />
 
-    <Eventos client:visible />
+      <Instagram client:visible />
 
-    <Ubicacion />
+      <Eventos client:visible />
+
+      <Ubicacion />
+    </div>
   </main>
 </Layout>
