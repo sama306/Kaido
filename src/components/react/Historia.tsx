@@ -66,11 +66,11 @@ export default function Historia() {
       <div className="flex-1 flex items-center px-8 lg:px-16 xl:px-20 py-12 lg:py-0">
         <div className="max-w-xl">
           <svg viewBox="0 0 80 28" fill="none" className="w-14 h-auto opacity-50 mb-3 hidden lg:block" aria-hidden="true">
-            <path d="M 0,24 Q 15,20 30,18 Q 45,16 60,18 Q 70,20 80,24" stroke="#1F5C52" stroke-width="0.8" stroke-linecap="round"/>
-            <path d="M 12,21 Q 10,14 16,10 Q 18,15 12,21" stroke="#1F5C52" stroke-width="0.6" stroke-linecap="round"/>
-            <path d="M 28,18 Q 32,10 36,8 Q 34,14 28,18" stroke="#6A1D2A" stroke-width="0.6" stroke-linecap="round"/>
-            <path d="M 46,17 Q 44,10 48,7 Q 50,12 46,17" stroke="#1F5C52" stroke-width="0.6" stroke-linecap="round"/>
-            <path d="M 64,19 Q 68,12 72,9 Q 70,16 64,19" stroke="#6A1D2A" stroke-width="0.6" stroke-linecap="round"/>
+            <path d="M 0,24 Q 15,20 30,18 Q 45,16 60,18 Q 70,20 80,24" stroke="#1F5C52" strokeWidth="0.8" strokeLinecap="round"/>
+            <path d="M 12,21 Q 10,14 16,10 Q 18,15 12,21" stroke="#1F5C52" strokeWidth="0.6" strokeLinecap="round"/>
+            <path d="M 28,18 Q 32,10 36,8 Q 34,14 28,18" stroke="#6A1D2A" strokeWidth="0.6" strokeLinecap="round"/>
+            <path d="M 46,17 Q 44,10 48,7 Q 50,12 46,17" stroke="#1F5C52" strokeWidth="0.6" strokeLinecap="round"/>
+            <path d="M 64,19 Q 68,12 72,9 Q 70,16 64,19" stroke="#6A1D2A" strokeWidth="0.6" strokeLinecap="round"/>
           </svg>
           <div className="flex items-center gap-3 mb-5">
             <span className="w-8 h-px bg-bordo/40" />

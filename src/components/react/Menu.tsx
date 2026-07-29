@@ -19,15 +19,15 @@ export default function Menu() {
     <section id="menu" className="relative overflow-hidden pt-section px-6 bg-crema">
 <div className="pointer-events-none absolute bottom-6 right-6 z-0 opacity-30 hidden lg:block" aria-hidden="true">
           <svg viewBox="0 0 44 60" className="w-24 h-auto" fill="none">
-            <ellipse cx="22" cy="30" rx="18" ry="26" stroke="#1F5C52" stroke-width="0.9"/>
-            <path d="M 22,4 Q 14,16 12,30 Q 10,44 22,56" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round"/>
-            <path d="M 22,4 Q 30,16 32,30 Q 34,44 22,56" stroke="#6A1D2A" stroke-width="0.5" stroke-linecap="round"/>
-            <path d="M 12,30 Q 8,28 6,30 Q 4,32 6,34 Q 8,36 12,30" stroke="#B8935F" stroke-width="0.6" stroke-linecap="round"/>
-            <path d="M 32,30 Q 36,28 38,30 Q 40,32 38,34 Q 36,36 32,30" stroke="#B8935F" stroke-width="0.6" stroke-linecap="round"/>
-            <path d="M 10,20 Q 4,18 2,20" stroke="#6A1D2A" stroke-width="0.4" stroke-linecap="round"/>
-            <path d="M 10,40 Q 4,42 2,40" stroke="#6A1D2A" stroke-width="0.4" stroke-linecap="round"/>
-            <path d="M 34,20 Q 40,18 42,20" stroke="#1F5C52" stroke-width="0.4" stroke-linecap="round"/>
-            <path d="M 34,40 Q 40,42 42,40" stroke="#1F5C52" stroke-width="0.4" stroke-linecap="round"/>
+            <ellipse cx="22" cy="30" rx="18" ry="26" stroke="#1F5C52" strokeWidth="0.9"/>
+            <path d="M 22,4 Q 14,16 12,30 Q 10,44 22,56" stroke="#1F5C52" strokeWidth="0.5" strokeLinecap="round"/>
+            <path d="M 22,4 Q 30,16 32,30 Q 34,44 22,56" stroke="#6A1D2A" strokeWidth="0.5" strokeLinecap="round"/>
+            <path d="M 12,30 Q 8,28 6,30 Q 4,32 6,34 Q 8,36 12,30" stroke="#B8935F" strokeWidth="0.6" strokeLinecap="round"/>
+            <path d="M 32,30 Q 36,28 38,30 Q 40,32 38,34 Q 36,36 32,30" stroke="#B8935F" strokeWidth="0.6" strokeLinecap="round"/>
+            <path d="M 10,20 Q 4,18 2,20" stroke="#6A1D2A" strokeWidth="0.4" strokeLinecap="round"/>
+            <path d="M 10,40 Q 4,42 2,40" stroke="#6A1D2A" strokeWidth="0.4" strokeLinecap="round"/>
+            <path d="M 34,20 Q 40,18 42,20" stroke="#1F5C52" strokeWidth="0.4" strokeLinecap="round"/>
+            <path d="M 34,40 Q 40,42 42,40" stroke="#1F5C52" strokeWidth="0.4" strokeLinecap="round"/>
           </svg>
         </div>
       <div className="max-w-7xl mx-auto">

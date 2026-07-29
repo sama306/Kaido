@@ -1,0 +1,5 @@
+# TODO: Reemplazar kaido.cafe por el dominio real cuando esté definido
+User-agent: *
+Allow: /
+
+Sitemap: https://kaido.cafe/sitemap.xml

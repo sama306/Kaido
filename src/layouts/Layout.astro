@@ -3,6 +3,10 @@ import "../styles/global.css";
 import Header from "../components/astro/Header.astro";
 import Footer from "../components/astro/Footer.astro";
 import Loader from "../components/react/Loader.tsx";
+
+// TODO: Reemplazar SITE_DOMAIN por el dominio real cuando esté definido
+const SITE_DOMAIN = "https://kaido.cafe";
+const OG_IMAGE = `${SITE_DOMAIN}/images/pexels-cafe-interior.jpg`;
 ---
 
 <!doctype html>
@@ -10,13 +14,35 @@ import Loader from "../components/react/Loader.tsx";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaidō — Café de especialidad en Palermo Soho</title>
+    <meta name="description" content="Café de especialidad en Palermo Soho, CABA. Especialidades, brunch, pastelería artesanal y eventos culturales. Un lugar para bajar el ritmo." />
+    <meta name="theme-color" content="#1F5C52" />
+
+    <link rel="canonical" href={SITE_DOMAIN} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Kaidō</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={SITE_DOMAIN} />
+    <meta property="og:title" content="Kaidō — Café de especialidad en Palermo Soho" />
+    <meta property="og:description" content="Café de especialidad en Palermo Soho, CABA. Especialidades, brunch, pastelería artesanal y eventos culturales. Un lugar para bajar el ritmo." />
+    <meta property="og:image" content={OG_IMAGE} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Kaidō" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kaidō — Café de especialidad en Palermo Soho" />
+    <meta name="twitter:description" content="Café de especialidad en Palermo Soho, CABA. Especialidades, brunch, pastelería artesanal y eventos culturales." />
+    <meta name="twitter:image" content={OG_IMAGE} />
   </head>
   <body>
     <Loader client:load />

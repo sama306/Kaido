@@ -21,13 +21,13 @@ export default function Eventos() {
     <section id="eventos" className="relative overflow-hidden pt-section px-6 bg-crema">
 <div className="pointer-events-none absolute bottom-6 right-6 z-0 opacity-25 hidden lg:block" aria-hidden="true">
           <svg viewBox="0 0 40 72" className="w-20 h-auto" fill="none">
-            <path d="M 20,72 Q 14,56 16,44 Q 18,32 26,26 Q 34,20 30,12 Q 26,4 20,0" stroke="#1F5C52" stroke-width="0.9" stroke-linecap="round"/>
-            <path d="M 20,72 Q 28,56 24,44 Q 20,32 14,26 Q 8,20 12,12 Q 16,4 20,0" stroke="#6A1D2A" stroke-width="0.6" stroke-linecap="round"/>
-            <path d="M 16,44 Q 8,42 4,44" stroke="#1F5C52" stroke-width="0.4" stroke-linecap="round"/>
-            <path d="M 26,26 Q 34,22 38,26" stroke="#6A1D2A" stroke-width="0.4" stroke-linecap="round"/>
-            <path d="M 14,26 Q 6,24 2,26" stroke="#1F5C52" stroke-width="0.4" stroke-linecap="round"/>
-            <path d="M 20,12 Q 18,8 20,4" stroke="#B8935F" stroke-width="0.4" stroke-linecap="round"/>
-            <path d="M 30,12 Q 32,8 30,4" stroke="#B8935F" stroke-width="0.4" stroke-linecap="round"/>
+            <path d="M 20,72 Q 14,56 16,44 Q 18,32 26,26 Q 34,20 30,12 Q 26,4 20,0" stroke="#1F5C52" strokeWidth="0.9" strokeLinecap="round"/>
+            <path d="M 20,72 Q 28,56 24,44 Q 20,32 14,26 Q 8,20 12,12 Q 16,4 20,0" stroke="#6A1D2A" strokeWidth="0.6" strokeLinecap="round"/>
+            <path d="M 16,44 Q 8,42 4,44" stroke="#1F5C52" strokeWidth="0.4" strokeLinecap="round"/>
+            <path d="M 26,26 Q 34,22 38,26" stroke="#6A1D2A" strokeWidth="0.4" strokeLinecap="round"/>
+            <path d="M 14,26 Q 6,24 2,26" stroke="#1F5C52" strokeWidth="0.4" strokeLinecap="round"/>
+            <path d="M 20,12 Q 18,8 20,4" stroke="#B8935F" strokeWidth="0.4" strokeLinecap="round"/>
+            <path d="M 30,12 Q 32,8 30,4" stroke="#B8935F" strokeWidth="0.4" strokeLinecap="round"/>
           </svg>
         </div>
       <div className="max-w-5xl mx-auto">
