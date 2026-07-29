@@ -1,4 +1,6 @@
 ---
+import MobileMenu from "../react/MobileMenu.tsx";
+
 const navItems = [
   { label: "Inicio", href: "#hero" },
   { label: "Historia", href: "#historia" },
@@ -27,11 +29,6 @@ const navItems = [
         ))
       }
     </ul>
-    <!-- Mobile menu toggle placeholder -->
-    <button class="md:hidden flex flex-col gap-1.5 bg-transparent border-none cursor-pointer p-1" aria-label="Menú">
-      <span class="block h-px w-5 bg-texto transition-transform duration-300"></span>
-      <span class="block h-px w-5 bg-texto transition-opacity duration-300"></span>
-      <span class="block h-px w-5 bg-texto transition-transform duration-300"></span>
-    </button>
+    <MobileMenu items={navItems} client:load />
   </nav>
 </header>
