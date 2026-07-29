@@ -3,10 +3,17 @@ import instagramPosts from "../../data/instagram";
 export default function Instagram() {
   return (
     <section id="instagram" className="relative overflow-hidden pt-section px-6 bg-crema">
-      <div
-        className="pointer-events-none absolute bottom-0 right-0 z-0 h-80 w-80"
-        style={{ backgroundImage: 'url(/images/pexels-coffee-shop-wooden.jpg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right', opacity: 0.1 }}
-      />
+<div className="pointer-events-none absolute bottom-6 right-6 z-0 opacity-25 hidden lg:block" aria-hidden="true">
+          <svg viewBox="0 0 64 56" className="w-28 h-auto" fill="none">
+            <circle cx="32" cy="28" r="22" stroke="#1F5C52" stroke-width="0.9"/>
+            <circle cx="32" cy="28" r="16" stroke="#6A1D2A" stroke-width="0.6"/>
+            <circle cx="32" cy="28" r="8" stroke="#1F5C52" stroke-width="0.5"/>
+            <circle cx="32" cy="28" r="2" fill="#B8935F"/>
+            <path d="M 54,28 Q 60,24 62,28 Q 60,32 54,28" stroke="#1F5C52" stroke-width="0.8" stroke-linecap="round"/>
+            <path d="M 54,22 Q 58,18 56,14" stroke="#6A1D2A" stroke-width="0.5" stroke-linecap="round"/>
+            <path d="M 54,34 Q 58,38 56,42" stroke="#6A1D2A" stroke-width="0.5" stroke-linecap="round"/>
+          </svg>
+        </div>
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-3 justify-center mb-3">
           <span className="w-8 h-px bg-bordo/40" />

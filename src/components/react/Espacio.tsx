@@ -23,10 +23,17 @@ export default function Espacio() {
   return (
     <>
       <section id="espacio" className="relative overflow-hidden pt-section px-6 bg-crema">
-        <div
-          className="pointer-events-none absolute bottom-0 right-0 z-0 h-80 w-80"
-          style={{ backgroundImage: 'url(/images/pexels-coffee-beans-sunlight.jpg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right', opacity: 0.1 }}
-        />
+        <div className="pointer-events-none absolute bottom-6 right-6 z-0 opacity-30 hidden lg:block" aria-hidden="true">
+          <svg viewBox="0 0 60 72" className="w-28 h-auto" fill="none">
+            <path d="M 30,0 Q 15,18 10,36 Q 5,54 30,72" stroke="#1F5C52" stroke-width="0.9" stroke-linecap="round"/>
+            <path d="M 30,0 Q 45,18 50,36 Q 55,54 30,72" stroke="#6A1D2A" stroke-width="0.7" stroke-linecap="round"/>
+            <path d="M 30,0 L 30,72" stroke="#1F5C52" stroke-width="0.5" stroke-linecap="round"/>
+            <path d="M 30,12 Q 22,16 16,20" stroke="#1F5C52" stroke-width="0.4" stroke-linecap="round"/>
+            <path d="M 30,28 Q 22,32 14,34" stroke="#1F5C52" stroke-width="0.4" stroke-linecap="round"/>
+            <path d="M 30,44 Q 38,48 44,50" stroke="#6A1D2A" stroke-width="0.4" stroke-linecap="round"/>
+            <path d="M 10,36 Q 2,34 0,32" stroke="#B8935F" stroke-width="0.5" stroke-linecap="round"/>
+          </svg>
+        </div>
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-3">
             <span className="w-8 h-px bg-bordo/40" />
