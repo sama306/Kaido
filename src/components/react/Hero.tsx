@@ -33,20 +33,13 @@ export default function Hero() {
       id="hero"
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      {/*
-        ─── Fondo: placeholder visual ───
-        TODO: Reemplazar este div por <video> o <img> con la foto/video real del local.
-        Mantener la estructura: absolute inset-0, object-cover, y el overlay negro.
-        Ejemplo con imagen:
-          <img src="/assets/foto-local.jpg" alt="" className="absolute inset-0 w-full h-full object-cover will-change-transform" ref={bgRef} />
-        Ejemplo con video:
-          <video src="/assets/video-cafe.mp4" autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover will-change-transform" ref={bgRef} />
-      */}
       <div
         ref={bgRef}
         className="absolute inset-0 will-change-transform"
         style={{
-          background: "linear-gradient(160deg, #1F2421 0%, #1F5C52 25%, #6A1D2A 55%, #1F2421 100%)",
+          backgroundImage: 'url(/images/pexels-cafe-interior.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/40" />

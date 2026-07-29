@@ -2,7 +2,11 @@ import instagramPosts from "../../data/instagram";
 
 export default function Instagram() {
   return (
-    <section id="instagram" className="pt-section px-6 bg-crema">
+    <section id="instagram" className="relative overflow-hidden pt-section px-6 bg-crema">
+      <div
+        className="pointer-events-none absolute bottom-0 right-0 z-0 h-80 w-80"
+        style={{ backgroundImage: 'url(/images/pexels-coffee-shop-wooden.jpg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right', opacity: 0.1 }}
+      />
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-3 justify-center mb-3">
           <span className="w-8 h-px bg-bordo/40" />
@@ -24,7 +28,7 @@ export default function Instagram() {
             >
               <div
                 className="absolute inset-0 will-change-transform transition-transform duration-[800ms] ease-out group-hover:scale-105"
-                style={{ background: post.imagen }}
+                style={{ backgroundImage: 'url(' + post.imagen + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}
               />
 
               <div className="absolute inset-0 bg-black/0 transition-colors duration-[800ms] ease-out group-hover:bg-black/50" />

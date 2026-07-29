@@ -50,18 +50,13 @@ export default function Historia() {
       id="historia"
       className="relative h-screen flex flex-col lg:flex-row bg-crema overflow-hidden"
     >
-      {/*
-        ─── Imagen protagonista ───
-        TODO: Reemplazar este div por <img> con la foto real del local.
-        Mantener la estructura: absolute inset-0, object-cover, will-change-transform.
-        Ejemplo:
-          <img src="/assets/foto-local.jpg" alt="Nuestra historia" className="absolute inset-0 w-full h-full object-cover will-change-transform" />
-      */}
       <div className="relative w-full lg:w-[60%] h-[45vh] lg:h-full overflow-hidden">
         <div
           className="absolute inset-0 will-change-transform"
           style={{
-            background: "linear-gradient(135deg, #1F5C52 0%, #6A1D2A 45%, #B8935F 75%, #1F2421 100%)",
+            backgroundImage: 'url(/images/pexels-barista-modern-coffee-shop.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         />
         <div className="absolute inset-0 bg-black/10" />

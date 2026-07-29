@@ -18,7 +18,11 @@ export default function Eventos() {
       : eventos.filter((e) => e.tipo === tipo);
 
   return (
-    <section id="eventos" className="pt-section px-6 bg-crema">
+    <section id="eventos" className="relative overflow-hidden pt-section px-6 bg-crema">
+      <div
+        className="pointer-events-none absolute bottom-0 right-0 z-0 h-80 w-80"
+        style={{ backgroundImage: 'url(/images/pexels-cafe-juanico.jpg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right', opacity: 0.1 }}
+      />
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-3 justify-center mb-3">
           <span className="w-8 h-px bg-bordo/40" />

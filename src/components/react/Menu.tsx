@@ -16,7 +16,11 @@ export default function Menu() {
   const filtrados = menu.filter((item) => item.categoria === categoria);
 
   return (
-    <section id="menu" className="pt-section px-6 bg-crema">
+    <section id="menu" className="relative overflow-hidden pt-section px-6 bg-crema">
+      <div
+        className="pointer-events-none absolute bottom-0 right-0 z-0 h-80 w-80"
+        style={{ backgroundImage: 'url(/images/pexels-coffee-beans-texture.jpg)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right', opacity: 0.1 }}
+      />
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-3 justify-center mb-3">
           <span className="w-8 h-px bg-bordo/40" />
@@ -84,7 +88,7 @@ function MenuItemCard({ item }: { item: MenuItem }) {
     >
       <div
         className="aspect-[4/3] w-full will-change-transform transition-transform duration-[800ms] ease-out group-hover:scale-105"
-        style={{ background: item.foto }}
+        style={{ backgroundImage: 'url(' + item.foto + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}
       />
 
       <div className="p-5 md:p-6">

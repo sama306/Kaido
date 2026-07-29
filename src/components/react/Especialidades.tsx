@@ -37,7 +37,7 @@ export default function Especialidades({ items }: Props) {
         >
           <div
             className="absolute inset-0 will-change-transform transition-transform duration-[800ms] ease-out group-hover:scale-105"
-            style={{ background: item.gradiente }}
+            style={{ backgroundImage: 'url(' + item.imagen + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}
           />
           <div className="absolute inset-0 bg-black/30 transition-opacity duration-[800ms] ease-out group-hover:bg-black/50" />
 
