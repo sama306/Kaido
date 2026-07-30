@@ -4,8 +4,6 @@
 
 Landing page premium diseñada para transmitir la experiencia de una cafetería de especialidad de inspiración japonesa: minimalismo cálido, ritmo lento y atención al detalle en cada interacción.
 
-**[Ver demo en vivo →](#)** _(agregar link una vez deployado)_
-
 <!-- 
 Capturas de pantalla sugeridas: Hero, Menú interactivo, Galería, Ubicación.
 ![Hero](./docs/screenshots/hero.png)
