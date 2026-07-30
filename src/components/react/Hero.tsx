@@ -58,12 +58,6 @@ export default function Hero() {
           >
             Ver Menú
           </a>
-          <a
-            href="#reservas"
-            className="inline-flex items-center justify-center px-10 py-3.5 border-2 border-crema text-crema font-contenido font-medium text-body rounded-none transition-all duration-300 hover:bg-crema hover:text-fondo-oscuro no-underline"
-          >
-            Reservar Mesa
-          </a>
         </div>
       </div>
     </section>
